@@ -7,9 +7,10 @@
   "theme_color": "#006837",
   "icons": [
     {
-      "src": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f35f.png",
-      "sizes": "72x72 192x192 512x512",
-      "type": "image/png"
+      "src": "bethelBeeSmall.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
