@@ -1,7 +1,8 @@
 {
   "name": "Concessions Manager",
   "short_name": "Concessions",
-  "start_url": "./index.html",
+  "start_url": "/ConcessionsManager/",
+  "scope": "/ConcessionsManager/",
   "display": "standalone",
   "background_color": "#006837",
   "theme_color": "#006837",
