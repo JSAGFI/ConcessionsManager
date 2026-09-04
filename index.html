@@ -14,44 +14,10 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { width: 100%; height: 100%; overflow: hidden; background: #006837; }
-    iframe { width: 100%; height: 100%; border: none; display: block; opacity: 0; transition: opacity 0.3s ease; }
-    iframe.loaded { opacity: 1; }
-
-    /* Instant Splash Screen */
-    #splash {
-      position: fixed; inset: 0; background: #006837;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      z-index: 10; color: white; font-family: -apple-system, sans-serif;
-    }
-    #splash img { width: 120px; height: auto; margin-bottom: 20px; }
-    .spinner {
-      width: 36px; height: 36px; border: 4px solid rgba(255,255,255,0.2);
-      border-top-color: #f2a900; border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
-    @keyframes spin { to { transform: rotate(360deg); } }
+    iframe { width: 100%; height: 100%; border: none; display: block; }
   </style>
 </head>
 <body>
-  <div id="splash">
-    <img src="bethelBeeSmall.png" alt="Bethel Bee">
-    <div class="spinner"></div>
-    <p style="margin-top: 15px; font-weight: 700; letter-spacing: 0.5px; font-size: 0.9rem;">LOADING INVENTORY...</p>
-  </div>
-
-  <iframe 
-    id="appFrame"
-    src="PASTE_YOUR_APPS_SCRIPT_EXEC_URL_HERE"
-    onload="hideSplash()">
-  </iframe>
-
-  <script>
-    function hideSplash() {
-      const splash = document.getElementById('splash');
-      const frame = document.getElementById('appFrame');
-      frame.classList.add('loaded');
-      setTimeout(() => { splash.style.display = 'none'; }, 200);
-    }
-  </script>
+  <iframe src="https://script.google.com/macros/s/AKfycbyav5GByOd6OfH-3w19Cudajo2z5lb0W41AzWEpfE42z7uGCpoAtONeQcBkdGpLS8gc6w/exec"></iframe>
 </body>
 </html>
