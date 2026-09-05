@@ -4,8 +4,8 @@
   "start_url": "index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#006837",
-  "theme_color": "#006837",
+  "background_color": "#1f5632",
+  "theme_color": "#1f5632",
   "icons": [
     {
       "src": "bethelHoneycomb.jpeg",
